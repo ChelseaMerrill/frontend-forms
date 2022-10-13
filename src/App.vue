@@ -54,10 +54,16 @@
 }
 .bill-form-col {
   border: 2px solid rgb(48, 48, 48);
-  height: 80vh;
+  height: 500px;
   width: 600px;
   border-radius: 5px;
   background-color: rgb(180, 216, 251);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .compare-button{
   background-color: black;
@@ -69,7 +75,7 @@
 .bill-input-row{
   display: flex;
   justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
+  align-items: baseline;
 }
+
 </style>
