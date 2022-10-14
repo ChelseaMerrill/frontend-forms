@@ -44,23 +44,17 @@
   <CContainer class="diff-container">
     <div class="diff-col diff-col-one">
       <div class="page-line-heading">
-        <p>Page</p>
-        <p>1</p>
-        <p>Line</p>
-        <p>1</p>
+        <span>Page</span>
       </div>
-      <div>
+      <div class="changed-text removed-text">
         <p>changedtext</p>
       </div>
     </div>
     <div class="diff-col diff-col-two">
       <div class="page-line-heading">
-        <p>Page</p>
-        <p>1</p>
-        <p>Line</p>
-        <p>1</p>
+        <span>Page</span>
       </div>
-      <div>
+      <div class="changed-text added-text">
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
       </div>
     </div>
@@ -68,6 +62,7 @@
 
 
 </template>
+
 
 
 
@@ -116,9 +111,22 @@
 .page-line-heading{
   display: flex;
   background-color: rgb(204, 211, 211);
+  vertical-align: middle;
+  padding: 5px;
 }
-.page-line-heading p{
+.page-line-heading span{
   padding-left: 5px;
+  font-weight: 500;
 }
-
+.removed-text{
+  color: red;
+  text-decoration: line-through;
+}
+.added-text{
+  color:blue;
+  font-weight: 700;
+}
+.changed-text{
+  padding: 10px;
+}
 </style>
