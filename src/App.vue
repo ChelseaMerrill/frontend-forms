@@ -40,11 +40,13 @@ const ArrayTwo = [
         <h3>Compare Two versions of the same Bill</h3>
         <div class="bill-form-col">
           <div class="version-field">
-            <p>First Version</p>
+            <span>First Version</span>
+            <br/>
             <input/>
           </div>
           <div class="version-field">
-            <p>Second Version</p>
+            <span>Second Version</span>
+            <br/>
             <input/>
           </div>
           <button class="compare-button">Compare</button>
@@ -54,13 +56,13 @@ const ArrayTwo = [
         <h3>Compare different Bills and Sessions</h3>
         <div class="bill-form-col">
           <div class="bill-group">
-            <p>First Bill</p>
+            <span>First Bill</span>
             <div class="bill-input-row"><p>Bill:</p><input/></div>
             <div class="bill-input-row"><p>Version:</p><input/></div>
             <div class="bill-input-row"><p>Session:</p><input/></div>
           </div>
           <div class="bill-group">
-            <p>Second Bill</p>
+            <span>Second Bill</span>
             <div class="bill-input-row"><p>Bill:</p><input/></div>
             <div class="bill-input-row"><p>Version:</p><input/></div>
             <div class="bill-input-row"><p>Session:</p><input/></div>
